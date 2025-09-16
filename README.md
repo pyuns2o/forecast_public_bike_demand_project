@@ -28,14 +28,14 @@
   - 외부 데이터: [서울시 시간대별 날씨 정보는 외부 크롤링을 통해 추가 수집](https://freemeteo.co.uk/weather/seoul/history/daily-history/?gid=1835848&language=english&country=united-kingdom&date=2022-06-05)
  
     
-- [**전처리 과정**:](https://github.com/na02string/forecast-public-bike-demand-project/blob/main/1_data_preparing.ipynb)
+- [**전처리 과정**:]
   - 날짜 및 시간 정보를 활용한 시간대별 데이터 정리
   - 날씨 및 미세먼지 데이터를 대여 이력 데이터와 병합
   - 날씨 데이터를 특정 기준에 따라 범주화(discomfort, windforce, 미세먼지, 초미세먼지 등)
   - 결측치 및 이상치 처리
   - datetime 변환 및 시간 관련 특성(hour, month, dayofweek 등) 추출
 
-## [3. 탐색적 데이터 분석 (EDA)](https://github.com/na02string/forecast-public-bike-demand-project/blob/main/2_preprocessing_and_EDA.ipynb)
+## [3. 탐색적 데이터 분석 (EDA)]
 
 ### **이용자 특성 분석**:
   - 이용권 타입(일일권, 정기권, 단체권)별 사용량 분석
@@ -275,10 +275,6 @@
 - 이용자 만족도 제고: 주말 관광지/출퇴근 시간대 자전거 부족 현상 완화
 - 환경·경제적 비용 절감: 불필요한 수송/재배치 최소화
 
-
-강서구 기준으로 따릉이 대여소별 특정 시간대의 `반납-대여` 값의 시각화 결과는 아래 링크에서 확인할 수 있습니다.
-[강서구 기준 지도 시각화 결과 보기](https://na02string.github.io/forecast-public-bike-demand-project/seoulbike_station_usage.html)
-  
 # 아쉬운 점
 - 전체 대여소에 대한 예측 및 최적 경로 설계 미완성
     - 시간 제약으로 인해 모든 대여소를 대상으로 예측을 진행하고, 그 결과를 기반으로 최적 경로 탐색 알고리즘을 적용해보지 못한게 아쉽습니다. Traveling Salesman Problem(TSP)과 같은 최적 경로 탐색 알고리즘을 적용해, 예측된 수요를 기반으로 자전거 재배치 경로를 최적화하는 것도 흥미로운 확장 방향이 될 것 같습니다.
